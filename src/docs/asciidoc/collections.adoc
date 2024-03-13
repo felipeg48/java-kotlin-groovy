@@ -1,0 +1,36 @@
+= Collections
+:icons: font
+:extension: .html
+:snippets: src/main
+
+== Java
+
+[source,java]
+----
+include::{snippets}/java/demo/Collections.java[]
+----
+
+== Kotlin
+
+[source,java]
+----
+include::{snippets}/kotlin/demo/Collections.kt[]
+----
+
+== Groovy
+
+[source,groovy]
+----
+include::{snippets}/groovy/demo/Collections.groovy[]
+----
+
+These examples showcase:
+
+- *List*: Ordered collection that allows duplicates (e.g., ArrayList in Java, mutableListOf in Kotlin).
+- *Set*: Unordered collection that does not allow duplicates (e.g., HashSet in Java and Kotlin).
+- *Adding elements*: Each language has its way to add elements using methods like add or the left-shift operator (<< in Groovy).
+- *Iterating*: All three languages provide mechanisms to loop through elements using for loops or functional constructs like forEach.
+
+Remember, these are basic examples. Each language offers various collection implementations with specific functionalities like sorting, searching, and filtering.
+
+link:nullobjects{extension}[NEXT - Null Objects^]

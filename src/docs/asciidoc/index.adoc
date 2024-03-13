@@ -1,0 +1,75 @@
+= Java, Kotlin and Groovy
+:icons: font
+:extension: .html
+:snippets: src/main
+
+== Typing
+
+- *Java*: Statically typed. Variable types are declared explicitly, and type checking happens during compilation. This ensures type safety but can lead to more verbose code.
++
+[source,java]
+----
+include::{snippets}/java/demo/JavaApp.java[]
+----
+
+- *Kotlin*: Statically typed. Variable types can be inferred by the compiler, so you don't have to declare them explicitly. This makes the code more concise and readable.
++
+[source,java]
+----
+include::{snippets}/kotlin/demo/KotlinApp.kt[]
+----
+
+- *Groovy*: Dynamically typed. Variable types are inferred at runtime, so you don't have to declare them explicitly. This makes the code more concise and readable, but can lead to runtime errors.
++
+[source,groovy]
+----
+include::{snippets}/groovy/demo/GroovyApp.groovy[]
+----
+
+
+== Syntax
+
+- *Java*: Verbose syntax with boilerplate code. Requires manual getters and setters for data access.
++
+[source,java]
+----
+include::{snippets}/java/demo/Syntax.java[]
+----
+
+- *Kotlin*: More concise syntax compared to Java. Leverages features like extension functions and null safety for cleaner code.
++
+[source,java]
+----
+include::{snippets}/kotlin/demo/Syntax.kt[]
+----
+
+- *Groovy*: Similar syntax to Java but allows for more flexibility. Supports operator overloading and closures for concise expressions.
++
+[source,groovy]
+----
+include::{snippets}/groovy/demo/Syntax.groovy[]
+----
+
+== Usage 
+
+- *Java*: General-purpose language widely used for enterprise applications, web development, and Android development (historically).
+- *Kotlin*: Primarily targets Android development (officially supported by Google) but also gaining traction for backend development due to its conciseness and interoperability with Java.
+- *Groovy*: Often used for scripting tasks, extending Java applications, and building Domain-Specific Languages (DSLs).
+
+
+== Interoperability
+
+All three languages run on the Java Virtual Machine (JVM) and can seamlessly interact with each other. Java libraries can be used in Kotlin and Groovy projects, and vice versa.
+
+
+
+== In summary
+
+- *Java*: Established, mature language with a vast ecosystem but can be verbose.
+- *Kotlin*: Modern language with a focus on developer experience, well-suited for Android development and backend systems.
+- *Groovy*: Flexible language offering dynamic typing and scripting capabilities, often used for specific tasks within Java projects.
+
+Choosing the right language depends on your project requirements. Java remains a solid choice for large-scale enterprise applications. Kotlin is a great option for modern Android development and backend systems seeking a concise and expressive language. Groovy shines in scripting scenarios and extending Java functionalities.
+
+
+link:collections{extension}[NEXT - Collections^]

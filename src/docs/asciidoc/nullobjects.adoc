@@ -1,0 +1,33 @@
+= Null Objects
+:icons: font
+:extension: .html
+:snippets: src/main
+
+== Java
+
+[source,java]
+----
+include::{snippets}/java/demo/Null.java[]
+----
+
+== Kotlin
+
+[source,java]
+----
+include::{snippets}/kotlin/demo/Null.kt[]
+----
+
+
+== Groovy
+
+[source,groovy]
+----
+include::{snippets}/groovy/demo/Null.groovy[]
+----
+
+- *Java*: Requires more verbose null checks but offers the Optional class for advanced handling.
+- *Kotlin*: Provides convenient operators for null safety, promoting cleaner code.
+- *Groovy*: Similar approach to Kotlin with the null-safe navigation operator.
+
+
+link:oop{extension}[NEXT - OOP Concepts^]

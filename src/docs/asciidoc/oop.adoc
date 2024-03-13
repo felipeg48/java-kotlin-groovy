@@ -1,0 +1,68 @@
+= OOP Concepts
+:icons: font
+:extension: .html
+:snippets: src/main
+
+All three languages, Java, Kotlin, and Groovy, utilize interfaces and abstract classes for defining contracts and promoting code reusability. Here's a breakdown of their functionalities:
+
+*Interfaces*:
+
+- Define a set of methods that *must be implemented* by classes that implement the interface.
+- *Do not contain any implementation details*. They only specify the method signatures.
+- *Can be used for multiple inheritance* (a class can implement multiple interfaces).
+
+*Abstract Classes*:
+
+- Can *contain both abstract methods* (without implementation) and concrete methods with implementations.
+- *Abstract methods must be overridden* by subclasses.
+- *Can be used for single inheritance* (a class can only inherit from one abstract class directly).
+
+== Java
+
+- *Strict approach*: Enforces clear separation between interface declaration and implementation.
+- *Concrete methods in abstract classes*: Allowed, providing default behavior for subclasses.
+
+[source,java]
+----
+include::{snippets}/java/demo/Oop.java[]
+----
+
+== Kotlin
+
+- *More concise syntax*: Interface methods can be declared without the need for the public abstract keyword.
+- *Optional concrete methods in interfaces*: Kotlin allows interfaces to have default implementations marked with the default keyword.
+
+[source,java]
+----
+include::{snippets}/kotlin/demo/Oop.kt[]
+----
+
+
+== Groovy
+
+- *Similar to Java*: Interface and abstract class definitions resemble Java's approach.
+- *Groovy provides traits*: Traits are similar to interfaces but can also contain concrete methods. This allows for more code sharing and mixin capabilities.
+
+[source,groovy]
+----
+include::{snippets}/groovy/demo/Oop.groovy[]
+----
+
+*Key Points*:
+
+- *Java*: Enforces a stricter separation between interface and implementation.
+- *Kotlin*: Offers more concise syntax and allows optional default implementations in interfaces.
+- Gro*ovy: Similar to Java but provides additional flexibility with traits.
+
+*Choosing between interfaces and abstract classes*:
+
+- Use interfaces when you want to define a contract with specific functionalities without providing any implementation details.
+- Use abstract classes when you want to provide a partial implementation that can be shared by subclasses, along with forcing them to implement the remaining abstract methods.
+
+*Additional functionalities*:
+
+* All three languages allow interfaces and abstract classes to have:
+** *Fields*: Can be declared with various access modifiers (final, static, etc.).
+** *Constructors*: Can be used for initialization purposes in abstract classes.
+ 
+link:meta{extension}[NEXT - Meta Programming^]

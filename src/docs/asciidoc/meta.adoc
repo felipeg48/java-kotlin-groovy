@@ -1,0 +1,57 @@
+= Meta Programming
+:icons: font
+:extension: .html
+:snippets: src/main
+
+== Java
+
+- *Limited built-in support*: Relies primarily on reflection for examining and modifying class structures at runtime.
+- *Reflection API*: Allows inspecting classes, methods, fields, and invoking methods dynamically.
+- *Less intuitive and can be error-prone*: Requires careful handling of class structures and potential type mismatches.
+
+[source,java]
+----
+include::{snippets}/java/demo/Meta.java[]
+----
+
+
+
+== Kotlin
+
+- *Offers some reflection capabilities*: Similar to Java, reflection can be used for inspecting and manipulating classes at runtime.
+- *Focuses on compile-time features*: Kotlin provides mechanisms like annotation processing and code generation for modifying code structure during compilation.
+- *Can be more robust and type-safe compared to Java's reflection*.
+
+[source,java]
+----
+include::{snippets}/kotlin/demo/Meta.kt[]
+----
+
+
+== Groovy
+
+- *Extensive metaprogramming capabilities*: Groovy offers features like dynamic method dispatch, metaclasses, and closures for altering program behavior at runtime.
+- *Metaclasses*: Provide access to a class's structure and allow modifying its behavior dynamically.
+- *More powerful but can introduce complexity if not used carefully*.
+
+[source,groovy]
+----
+include::{snippets}/groovy/demo/Meta.groovy[]
+----
+
+*Key Points*:
+
+- *Java*: Limited built-in support, relies heavily on reflection.
+- *Kotlin*: Offers reflection and compile-time features like annotation processing.
+- *Groovy*: Most powerful metaprogramming capabilities with dynamic method dispatch, metaclasses, and closures.
+
+*Choosing the right approach*:
+
+- *Java*: Use reflection when necessary, but be cautious due to potential complexity and errors.
+- *Kotlin*: Consider annotation processing and code generation for specific use cases where compile-time modifications are desired.
+- *Groovy*: Leverage metaprogramming features cautiously for advanced scenarios. Groovy's dynamic nature can introduce complexity if not managed properly.
+
+*Additional Notes*:
+
+- Metaprogramming can be a powerful tool for advanced tasks, but it should be used judiciously due to potential performance overhead and increased code complexity.
+- For most development scenarios, focusing on well-designed classes and well-structured code might be a more practical approach than relying heavily on metaprogramming.

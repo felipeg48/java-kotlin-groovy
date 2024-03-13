@@ -1,0 +1,175 @@
+= Java, Koltin and Groovy
+:snippets: ../../main
+:icons: font
+
+
+== Typing: Java
+
+[.stretch]
+[source,java]
+----
+include::{snippets}/java/demo/JavaApp.java[ident=0]
+----
+
+=== Java: Variables
+
+[.stretch]
+[source,java]
+----
+include::{snippets}/java/demo/Typing.java[ident=0]
+----
+
+
+== Typing: Kotlin
+
+[.stretch]
+[source,java]
+----
+include::{snippets}/kotlin/demo/KotlinApp.kt[ident=0]
+----
+
+=== Kotlin: Variables
+
+[.stretch]
+[source,java]
+----
+include::{snippets}/kotlin/demo/Typing.kt[ident=0]
+----
+
+
+== Typing: Groovy
+
+[.stretch]
+[source,groovy]
+----
+include::{snippets}/groovy/demo/GroovyApp.groovy[ident=0]
+----
+
+=== Groovy: Variables
+
+[.stretch]
+[source,groovy]
+----
+include::{snippets}/groovy/demo/Typing.groovy[ident=0]
+----
+
+== Syntax: Java
+
+[.stretch]
+[source,java]
+----
+include::{snippets}/java/demo/Syntax.java[ident=0]
+----
+
+== Syntax: Kotlin
+
+[.stretch]
+[source,java]
+----
+include::{snippets}/kotlin/demo/Syntax.kt[ident=0]
+----
+
+== Syntax: Groovy
+
+[.stretch]
+[source,groovy]
+----
+include::{snippets}/groovy/demo/Syntax.groovy[ident=0]
+----
+
+=== More about Groovy
+
+[.stretch]
+[source,groovy]
+----
+include::{snippets}/groovy/demo/Syntax2.groovy[ident=0]
+----
+
+== Collections: Java
+
+[.stretch]
+[source,java]
+----
+include::{snippets}/java/demo/Collections.java[ident=0]
+----
+
+== Collections: Kotlin
+
+[.stretch]
+[source,java]
+----
+include::{snippets}/kotlin/demo/Collections.kt[ident=0]
+----
+
+== Collections: Groovy
+
+[.stretch]
+[source,groovy]
+----
+include::{snippets}/groovy/demo/Collections.groovy[ident=0]
+----
+
+== OOP: Java
+
+[.stretch] 
+[source,java]
+----
+include::{snippets}/java/demo/Oop.java[ident=0]
+----
+
+== OOP: Kotlin
+
+[.stretch]
+[source,java]
+----
+include::{snippets}/kotlin/demo/Oop.kt[ident=0]
+----
+
+== OOP: Groovy
+
+[.stretch]
+[source,groovy]
+----
+include::{snippets}/groovy/demo/Oop.groovy[ident=0]
+----
+
+=== More about Groovy
+
+[.stretch]
+[source,groovy]
+----
+include::{snippets}/groovy/demo/Oop2.groovy[ident=0]
+----
+
+
+== Metaprogramming: Java
+    
+[.stretch]
+[source,java]
+----
+include::{snippets}/java/demo/Meta.java[ident=0]
+----
+
+== Metaprogramming: Kotlin
+
+[.stretch]
+[source,java]
+----
+include::{snippets}/kotlin/demo/Meta.kt[ident=0]
+----
+
+== Metaprogramming: Groovy
+
+[.stretch]
+[source,groovy]
+----
+include::{snippets}/groovy/demo/Meta.groovy[ident=0]
+----
+
+=== More about Groovy
+
+[.stretch]
+[source,groovy]
+----
+include::{snippets}/groovy/demo/Meta2.groovy[ident=0]
+----

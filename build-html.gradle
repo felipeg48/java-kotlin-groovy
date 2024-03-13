@@ -1,0 +1,39 @@
+plugins {
+    id 'org.asciidoctor.jvm.convert' version '4.0.2'
+    id 'org.asciidoctor.jvm.pdf' version '4.0.2'
+    id 'org.asciidoctor.jvm.gems' version '4.0.2'
+}
+
+apply plugin: 'java'
+
+version = '0.0.1'
+
+repositories {
+    mavenCentral()
+    ruby.gems()
+}
+
+dependencies {
+  asciidoctorGems 'rubygems:rouge:3.15.0'
+}
+
+asciidoctor {
+    
+    //sourceDir  file('src/docs/asciidoc')
+    //outputDir  file('dist/website')
+
+    //backends 'html5'
+    //backends 'pdf'
+    attributes  'build-gradle': file('build-html.gradle'),  
+                'sourcedir': project.sourceSets.main.java.srcDirs[0],
+                'imagesdir': 'images',
+                'source-highlighter': 'coderay',
+                'coderay-css': 'style',
+  			    'toc' : 'left',
+                'icons': 'font',
+                'setanchors': '',
+                'idprefix': '',
+                'idseparator': '-',
+  			    'docinfo': 'shared'
+                
+}

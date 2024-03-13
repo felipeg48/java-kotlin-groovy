@@ -1,0 +1,64 @@
+plugins {
+  id 'org.asciidoctor.jvm.gems' version '3.3.0'
+  id 'org.asciidoctor.jvm.revealjs' version '4.0.0-alpha.1'
+}
+
+
+apply plugin: 'java'
+
+version = '0.0.1'
+
+repositories {
+    mavenCentral()
+    ruby.gems()
+}
+
+revealjs {
+    version = '3.1.0'
+    templateGitHub {
+        organisation = 'hakimel'
+        repository = 'reveal.js'
+        tag = '3.9.1'
+    }
+}
+
+asciidoctorRevealJs {
+    sourceDir file('src/docs/revealjs')
+    //outputDir file('dist/website')
+
+    baseDirFollowsSourceFile()
+
+    resources {
+        from("${sourceDir}/images") {
+            include '**'
+            into 'images'
+        }
+        from("${sourceDir}/css") {
+            include '**'
+            into 'css'
+        }
+    }
+
+    revealjsOptions { 
+        controls = true
+        transition = 'convex'    
+    }
+
+    attributes 'build-gradle': file('build-revealjs.gradle'),
+               'endpoint-url': 'http://example.org',
+               'source-highlighter': 'coderay',
+               'customcss': 'css/custom.css',
+               'coderay-css': 'style',
+               'imagesdir': './images',
+               'toc': 'left',
+               'icons': 'font',
+               'setanchors': '',
+               'idprefix': 'slide-',
+               'idseparator': '-',
+               'docinfo': 'shared',
+               'revealjs_theme': 'white',
+               'revealjs_history': 'true',
+               'revealjs_slideNumber': 'true'
+}
+
+task asciidoctor(dependsOn: asciidoctorRevealJs)
