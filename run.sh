@@ -14,7 +14,7 @@ do
  reset
  echo "Website: HTTP Server PIDs: $PID1 - $PID2"
  echo "Converting..."
- gradle asciidoctor -b build-html.gradle > /dev/null 2>&1
- gradle asciidoctor -b build-revealjs.gradle > /dev/null 2>&1
+ ./gradlew asciidoctor -b build-html.gradle > /dev/null 2>&1
+ ./gradlew asciidoctor -b build-revealjs.gradle > /dev/null 2>&1
  echo "Done."
 done

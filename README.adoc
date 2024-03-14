@@ -1,0 +1,43 @@
+= Comparison: Java, Kotlin and Groovy
+:icons: font
+
+== PreRequisites
+
+- Java 17 installed.
+
+== Create Documentation and Slides
+
+[source,shell]
+.Documentation
+----
+./gradlew asciidoctor -b build-html.gradle
+----
+
+This will generate the documentation in the `build/docs/asciidoc` folder.
+
+[source,shell]
+.PDF
+----
+./gradlew asciidoctor -b build-pdf.gradle
+----
+
+This will generate the documentation in the `build/docs/asciidocPdf` folder.
+
+[source,shell]
+.Slides
+----
+./gradlew asciidoctor -b build-revealjs.gradle
+----
+
+This will generate the slides in the `build/docs/asciidocRevealjs` folder.
+
+== Development
+
+The `run.sh` script will run the gradle build and it will watch for any changes in the source code and re-run the build.
+
+WARNING: This will only work on Unix based systems. It uses the `fswatch` command to watch for changes.
+
+[source,shell]
+----
+./run.sh
+----
