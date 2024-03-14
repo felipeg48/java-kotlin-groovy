@@ -4,6 +4,7 @@
 == PreRequisites
 
 - Java 17 installed.
+- Python 3 installed (for the `run.sh` script).
 
 == Create Documentation and Slides
 
@@ -33,7 +34,7 @@ This will generate the slides in the `build/docs/asciidocRevealjs` folder.
 
 == Development
 
-The `run.sh` script will run the gradle build and it will watch for any changes in the source code and re-run the build.
+The `run.sh` script will run the gradle build and it will watch for any changes in the source code and re-run the build. It will use Python to server the files in ports `8001` and `8002`.
 
 WARNING: This will only work on Unix based systems. It uses the `fswatch` command to watch for changes.
 
