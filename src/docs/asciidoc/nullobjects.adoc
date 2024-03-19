@@ -30,4 +30,4 @@ include::{snippets}/groovy/demo/Null.groovy[]
 - *Groovy*: Similar approach to Kotlin with the null-safe navigation operator.
 
 
-link:oop{extension}[NEXT - OOP Concepts^]
+link:collections{extension}[Back] - link:oop{extension}[NEXT - OOP Concepts]

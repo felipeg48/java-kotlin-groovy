@@ -65,4 +65,4 @@ include::{snippets}/groovy/demo/Oop.groovy[]
 ** *Fields*: Can be declared with various access modifiers (final, static, etc.).
 ** *Constructors*: Can be used for initialization purposes in abstract classes.
  
-link:meta{extension}[NEXT - Meta Programming^]
+link:nullobjects{extension}[Back] - link:meta{extension}[NEXT - Meta Programming]

@@ -55,3 +55,5 @@ include::{snippets}/groovy/demo/Meta.groovy[]
 
 - Metaprogramming can be a powerful tool for advanced tasks, but it should be used judiciously due to potential performance overhead and increased code complexity.
 - For most development scenarios, focusing on well-designed classes and well-structured code might be a more practical approach than relying heavily on metaprogramming.
+
+link:oop{extension}[Back]

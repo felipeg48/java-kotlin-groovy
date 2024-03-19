@@ -62,7 +62,6 @@ include::{snippets}/groovy/demo/Syntax.groovy[]
 All three languages run on the Java Virtual Machine (JVM) and can seamlessly interact with each other. Java libraries can be used in Kotlin and Groovy projects, and vice versa.
 
 
-
 == In summary
 
 - *Java*: Established, mature language with a vast ecosystem but can be verbose.
@@ -72,4 +71,4 @@ All three languages run on the Java Virtual Machine (JVM) and can seamlessly int
 Choosing the right language depends on your project requirements. Java remains a solid choice for large-scale enterprise applications. Kotlin is a great option for modern Android development and backend systems seeking a concise and expressive language. Groovy shines in scripting scenarios and extending Java functionalities.
 
 
-link:collections{extension}[NEXT - Collections^]
+link:collections{extension}[NEXT - Collections]

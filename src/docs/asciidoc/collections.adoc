@@ -33,4 +33,4 @@ These examples showcase:
 
 Remember, these are basic examples. Each language offers various collection implementations with specific functionalities like sorting, searching, and filtering.
 
-link:nullobjects{extension}[NEXT - Null Objects^]
+link:index{extension}[Back] - link:nullobjects{extension}[NEXT - Null Objects]
